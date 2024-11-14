@@ -1,13 +1,13 @@
 #include<stdio.h>
 
-void matrix_product(int n,int m,int k,double A[n][m],double B[m][k],double result[n][k]);//行列積の計算
-void input(int n,int m,double A[n][m]); //行列の入力
-void init(int n,int m,double A[n][m]); //行列の0初期化
-void output(int n,int m,double result[n][m]); //行列の出力
+void matrix_product(int n,int m,int k,double A[n][m],double B[m][k],double result[n][k]);//行列積計算
+void input(int n,int m,double A[n][m]); //行列入力
+void init(int n,int m,double A[n][m]); //行列0初期化
+void output(int n,int m,double result[n][m]); //行列出力
 
 int main(void)
 {
-  int n,m,k; //行列のサイズ N*M行列とM*K行列の積を計算しN*K行列となる
+  int n,m,k; //N*M行列 * M*K行列 -> N*K行列
   printf("input n,m,k: \n");
   scanf("%d%d%d",&n,&m,&k);
   
